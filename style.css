@@ -1,6 +1,95 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    line-height: 150%;
+    color: #333;
+    background: whitesmoke;
+}
 
-/* Header formatting */
+header {
+    background-image: linear-gradient(to right, darkslategrey, white);
+    color: rgb(43, 42, 42);
+    font-weight: bold;
+    padding-right: 33%;
+    width: 1600;
+    height: 75px;
+
+}
+
 h1 {
-    text-emphasis: bold;
+    padding: 20px;
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 28px;
+    padding-left: 20%;
+    text-shadow: whitesmoke 0 0 4px;
+}
 
+h2 {
+font-size: 24px;
+font-weight: bold;
+padding: 5px;
+}  
+
+a {
+    color: darkblue;
+}
+
+a:visited {
+    color: green;
+}
+
+.container {
+    width: 1800px;
+    margin: 15 auto;
+}
+
+#main-bio, 
+#contact-info,
+#bio-image,
+#sidebar {
+    float: left;
+}
+#sidebar{
+    border-radius: 25px;
+    border: 5px solid darkslategray;
+    padding: 20px;
+    width: 10%;
+    height: 800px; 
+    background-color: lightskyblue;
+}
+#main-bio{
+    width: 60%;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#bio-image {
+    width: 200px;
+    height: 200px;
+    margin-right: 10px;
+}
+
+#contact-info{
+    width: 25%;
+}
+
+h4{
+    font-size: 14px;
+
+}
+
+#NHLStandings{
+    margin: 10 auto;
+    padding: 5px;
+    border: 5px solid darkslategray;
+    font-size: 16px;
+}
+.logo{
+    height: 20px;
+    width: 20px;
+    margin: 2px;
 }
