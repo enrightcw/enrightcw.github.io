@@ -64,7 +64,7 @@ a:visited {
     width: 60%;
     padding-left: 30px;
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 100px;
 }
 
 #bio-image {
@@ -82,14 +82,34 @@ h4{
 
 }
 
-#NHLStandings{
+#NHLStandings, th, td{
     margin: 10 auto;
     padding: 5px;
     border: 5px solid darkslategray;
     font-size: 16px;
+    text-align: center;
+    width: 80%;
+    text-emphasis: bold;    
 }
+
+th, td{
+width: 30px;
+}
+
+#nhl{
+    background-color: darkgrey;
+}
+
+tr:nth-child(even) {
+    background-color: lightgrey;
+}
+
+.team{
+    text-align: left;
+}
+
 .logo{
-    height: 20px;
-    width: 20px;
-    margin: 2px;
+    height: 25px;
+    width: 25px;
+    margin: 3px;
 }
