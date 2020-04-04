@@ -48,13 +48,21 @@ a:visited {
 
 #main-bio, 
 #contact-info,
-#bio-image,
 #sidebar{
     float: left;
 }
 
+
+#bio-image {
+    width: 200px;
+    height: 300px;
+    margin-right: 5px;
+    float: inherit;
+}
+
 #bioText{
-    width: 60%;
+    width: 30%;
+    float: inherit;
 }
 
 #sidebar{
@@ -67,15 +75,7 @@ a:visited {
 }
 #main-bio{
     width: 60%;
-    padding-left: 30px;
-    padding-top: 10px;
     padding-bottom: 100px;
-}
-
-#bio-image {
-    width: 200px;
-    height: 200px;
-    margin-right: 5px;
 }
 
 #contact-info{
@@ -91,6 +91,7 @@ h4{
     margin: 10 auto;
     padding: 5px;
     border: 5px solid darkslategray;
+    border-collapse: collapse;
     font-size: 16px;
     text-align: center;
     width: 80%;
