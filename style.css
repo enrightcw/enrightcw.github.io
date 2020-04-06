@@ -3,34 +3,30 @@ body{
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
+    background-color: #78a4d6;
     line-height: 150%;
     color: #333;
-    background: whitesmoke;
+    
 }
 
 header {
-    background-image: linear-gradient(to right, darkslategrey, white);
+    background-image: linear-gradient(to right, #447dbd, white);
     color: rgb(43, 42, 42);
     font-weight: bold;
-    padding-right: 33%;
-    width: 1600;
     height: 75px;
+    border-radius: 25px;
 
 }
 
 h1 {
     padding: 20px;
-    margin: 0;
-    margin-bottom: 20px;
     font-size: 28px;
-    padding-left: 20%;
     text-shadow: whitesmoke 0 0 4px;
 }
 
 h2 {
 font-size: 24px;
 font-weight: bold;
-padding: 5px;
 }  
 
 a {
@@ -42,60 +38,24 @@ a:visited {
 }
 
 .container {
-    width: 1800px;
-    margin: 15 auto;
+    margin: auto;
 }
 
-#main-bio, 
-#contact-info,
-#sidebar{
-    float: left;
-}
-
-
-#bio-image {
-    width: 200px;
-    height: 300px;
-    margin-right: 5px;
-    float: inherit;
-}
-
-#bioText{
-    width: 30%;
-    float: inherit;
-}
-
-#sidebar{
-    border-radius: 25px;
-    border: 5px solid darkslategray;
-    padding: 20px;
-    width: 10%;
-    height: 800px; 
-    background-color: lightskyblue;
-}
-#main-bio{
-    width: 60%;
-    padding-bottom: 100px;
-}
-
-#contact-info{
-    width: 25%;
-}
-
-h4{
+h4 {
     font-size: 14px;
 
 }
 
 #NHLStandings, th, td{
-    margin: 10 auto;
-    padding: 5px;
     border: 5px solid darkslategray;
     border-collapse: collapse;
     font-size: 16px;
     text-align: center;
     width: 80%;
-    text-emphasis: bold;    
+    text-emphasis: bold;   
+    margin-left: auto; 
+    margin-right: auto;
+    margin-top: 40px;
 }
 
 th, td{
@@ -118,4 +78,17 @@ tr:nth-child(even) {
     height: 25px;
     width: 25px;
     margin: 3px;
+}
+
+
+.cardImg {
+    height: 350px;
+    width: 250px;
+}
+
+.cardOne,
+.cardTwo {
+    margin-left: auto; 
+    margin-right: auto;
+    margin-top: 40px;
 }

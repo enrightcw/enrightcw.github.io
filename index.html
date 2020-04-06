@@ -1,60 +1,76 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My Webpage</title>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>My Webpage</title>
         <link rel="shortcut icon" href="https://img.pngio.com/autobot-symbol-png-100-images-in-collection-page-1-autobot-png-840_750.jpg">
         <!-- <link rel="stylesheet" type="text/css" href="reset.css"> -->
         <link rel="stylesheet" type="text/css" href="style.css">
 
-    </head>
 
-    <body> 
+  </head>
 
-        <!-- Site Header -->
-        <header>
-            <h1>Student Bio</h1>
-        </header>
-    
-        <div class="container">
-        
-            <div id="sidebar">
-                
-                <h3>My Working Websites</h3>
 
-                <bl>
-                    
-                    <li><a href="https://enrightcw.github.io/my-favorite-animal/" target="_blank">Snow Leopard Site </a></li>
-
-                </bl>    
-
+  <body class="container">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Projects
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="https://enrightcw.github.io/my-favorite-animal/" target="_blank">My Favorite Animal</a>
+                    <a class="dropdown-item" href="#">Coming Soon!</a>
+                    <a class="dropdown-item" href="#">Coming Not As Soon!</a>
+                </div>
+                </li>
+            </ul>
             </div>
-        
-            <section id="main-bio">
-                <!-- Section 1: Bio-->
-                <h2>Chris Enright</h2>
+        </nav>
 
-                <img id="bio-img" src="http://placehold.it/200x300"  alt="Chris Enright">
-                
-                <!-- Populate this down the line -->
-                <p id="bioText">
+        <!-- Row 1 -->
+        <header class="row">
+            <h1 class="col-md-12">My Bio Page</h1>
+        </header>
+
+        <!-- Row 2-->
+        <section class="row">
+            <img class="col-md-3" id="bio-img" src="https://upload.wikimedia.org/wikipedia/commons/1/14/Deadpool_2_Japan_Premiere_Red_Carpet_Ryan_Reynolds_%28cropped%29.jpg"  alt="Chris Enright">
+
+            <p class="col-md-5" id="bioText">
                                        
-                    I am a Project Manager who is not great at talking about himself.
-                                        
-                    I've lived up and down the eastern seaboard, prior to here I'm from Massachusetts.
-                                        
-                                        
-                    Is being independently wealthy a dream job...? I have less of a dream job, and more of a dream environment, working with a creative team to conjure amazing things into existence.
-  
-                    I learned BASIC in high school, and started my BA in CS, but it wasn't the right time in my life to focus on something like this. I feel like the time is right now and I'm excited to get started.
+                I am a Project Manager who is not great at talking about himself.
+                                    
+                I've lived up and down the eastern seaboard, and prior to Bluffton, SC I'm from Massachusetts.
+                                    
+                <br />
+                <br />                  
+                I have less of a dream job, and more of a dream environment, working with a creative team to conjure amazing things into existence.
+                <br />
+                <br /> 
+                I learned BASIC in high school, and started my BA in CS, but it wasn't the right time in my life to focus on something like this. I feel like the time is right now and I'm excited to get started.
 
-                </p>
-
-            </section>  
-
-            <section id="contact-info">
-
+            </p>
+        
+            <section class="col-md-4" id="contact-info">
                 <!-- Contact Info Section -->
                 <h2>Contact Info</h2>
 
@@ -64,48 +80,77 @@
                     <li><strong>Portfolio:</strong> <a href="#">Coming Soon</a></li>
 
                 </ul>
-                
-            </section>  
-
-
-            <section>
-                <table id="NHLStandings">
-                    <tr>
-                      <th id="nhl">National Hockey League</th>
-                      <th>GP</th>
-                      <th>W</th>
-                      <th>L</th>
-                      <th>OT</th>
-                      <th>PTS</th>
-                      <th>GF</th>
-                      <th>GA</th>
-                      <th>DIFF</th>
-                    </tr>
-                    <tr>
-                        <td class="team">1<img class="logo" src="https://sportslogohistory.com/wp-content/uploads/2016/SLH/nhl_primary/boston_bruins.png" alt="Bruins Logo">Boston</td>
-                        <td>70</td>
-                        <td>44</td>
-                        <td>14</td>
-                        <td>12</td>
-                        <td>100</td>
-                        <td>227</td>
-                        <td>174</td>
-                        <td>+53</td>
-                    </tr>
-                    <tr>
-                        <td class="team">7<img class="logo" src="https://worldsportlogos.com/wp-content/uploads/2018/01/Pittsburgh-Penguins-logo.png" alt="Penguins Logo">Pittsburgh</td>
-                        <td>69</td>
-                        <td>40</td>
-                        <td>23</td>
-                        <td>6</td>
-                        <td>86</td>
-                        <td>224</td>
-                        <td>196</td>
-                        <td>+28</td>
-                    </tr>
-                  </table> 
             </section>
+        </section>
 
-        </div>
-    </body>
+        <!-- Row 3 -->
+        <section class="row">
+            <table class="col-md-10" id="NHLStandings">
+                <tr>
+                  <th id="nhl">National Hockey League</th>
+                  <th>GP</th>
+                  <th>W</th>
+                  <th>L</th>
+                  <th>OT</th>
+                  <th>PTS</th>
+                  <th>GF</th>
+                  <th>GA</th>
+                  <th>DIFF</th>
+                </tr>
+                <tr>
+                    <td class="team">1<img class="logo" src="https://sportslogohistory.com/wp-content/uploads/2016/SLH/nhl_primary/boston_bruins.png" alt="Bruins Logo">Boston</td>
+                    <td>70</td>
+                    <td>44</td>
+                    <td>14</td>
+                    <td>12</td>
+                    <td>100</td>
+                    <td>227</td>
+                    <td>174</td>
+                    <td>+53</td>
+                </tr>
+                <tr>
+                    <td class="team">7<img class="logo" src="https://worldsportlogos.com/wp-content/uploads/2018/01/Pittsburgh-Penguins-logo.png" alt="Penguins Logo">Pittsburgh</td>
+                    <td>69</td>
+                    <td>40</td>
+                    <td>23</td>
+                    <td>6</td>
+                    <td>86</td>
+                    <td>224</td>
+                    <td>196</td>
+                    <td>+28</td>
+                </tr>
+              </table> 
+        </section>
+
+        <section class="row">
+
+            <div class="cardOne" style="width: 18rem;">
+                <img class="cardImg" src="https://upload.wikimedia.org/wikipedia/en/a/a9/Grosse_Pointe_Blank_poster.jpg" class="card-img-top" alt="Grosse Pointe Blank">
+
+                <div class="card-body">
+                    <h5 class="card-title">Grosse Pointe Blank Trailer</h5>
+                    <p class="card-text">If you haven't seen this movie, or worse, don't like it, we can't be friends.</p>
+                    <a href="https://www.youtube.com/watch?v=IJ7AXKWmWOg" class="btn btn-primary">View The Trailer</a>
+                </div>
+            </div>
+
+            <div class="cardTwo" style="width: 18rem;">
+                <img class="cardImg" src="https://www.gstatic.com/tv/thumb/v22vodart/19352/p19352_v_v8_ab.jpg" class="card-img-top" alt="The Fifth Element">
+
+                <div class="card-body">
+                    <h5 class="card-title">Fifth Element</h5>
+                    <p class="card-text">This is one of the only, if not the only, movie where the protagonist never actually meets the antagonist...ever.</p>
+                    <a href="www.youtube.com%2Fwatch%3Fv%3DfQ9RqgcR24g&usg=AOvVaw2-TxFlL8BB19T5Vh4MFWev" class="btn btn-primary">View The Trailer</a>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
 </html>
