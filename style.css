@@ -12,7 +12,6 @@ body{
 header {
     background-image: linear-gradient(to right, #447dbd, white);
     color: rgb(43, 42, 42);
-    font-weight: bold;
     height: 75px;
     border-radius: 25px;
 
@@ -20,6 +19,7 @@ header {
 
 h1 {
     padding: 20px;
+    font-weight: bolder;
     font-size: 28px;
     text-shadow: whitesmoke 0 0 4px;
 }
@@ -44,6 +44,10 @@ a:visited {
 h4 {
     font-size: 14px;
 
+}
+
+.row {
+    margin-top: 15px;
 }
 
 #NHLStandings, th, td{
@@ -87,7 +91,8 @@ tr:nth-child(even) {
 }
 
 .cardOne,
-.cardTwo {
+.cardTwo,
+.cardThree {
     margin-left: auto; 
     margin-right: auto;
     margin-top: 40px;
