@@ -25,9 +25,22 @@ h1 {
 }
 
 h2 {
-font-size: 24px;
-font-weight: bold;
+    font-size: 24px;
+    font-weight: bold;
 }  
+
+h3 {
+    font-size: 16px;
+}
+
+h4 {
+    font-size: 14px;
+}
+
+#bio-img {
+    height: 100px;
+    width: 100px;
+}
 
 a {
     color: darkblue;
@@ -39,11 +52,6 @@ a:visited {
 
 .container {
     margin: auto;
-}
-
-h4 {
-    font-size: 14px;
-
 }
 
 .row {
@@ -90,10 +98,15 @@ tr:nth-child(even) {
     width: 250px;
 }
 
-.cardOne,
-.cardTwo,
-.cardThree {
+.card {
     margin-left: auto; 
     margin-right: auto;
     margin-top: 40px;
+}
+
+footer {
+    background-image: linear-gradient(to right, #447dbd, white);
+    color: rgb(43, 42, 42);
+    height: 35px;
+    border-radius: 25px;
 }
