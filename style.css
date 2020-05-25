@@ -37,10 +37,10 @@ h4 {
     font-size: 14px;
 }
 
-#bio-img {
-    height: 100px;
+/* #bio-img {
+    height: 300px;
     width: 100px;
-}
+} */
 
 a {
     color: darkblue;
@@ -58,55 +58,10 @@ a:visited {
     margin-top: 15px;
 }
 
-#NHLStandings, th, td{
-    border: 5px solid darkslategray;
-    border-collapse: collapse;
-    font-size: 16px;
-    text-align: center;
-    width: 80%;
-    text-emphasis: bold;   
-    margin-left: auto; 
-    margin-right: auto;
-    margin-top: 40px;
-}
-
-th, td{
-width: 30px;
-}
-
-#nhl{
-    background-color: darkgrey;
-}
-
-tr:nth-child(even) {
-    background-color: lightgrey;
-}
-
-.team{
-    text-align: left;
-}
-
-.logo{
-    height: 25px;
-    width: 25px;
-    margin: 3px;
-}
-
-
-.cardImg {
-    height: 350px;
-    width: 250px;
-}
-
-.card {
-    margin-left: auto; 
-    margin-right: auto;
-    margin-top: 40px;
-}
-
 footer {
     background-image: linear-gradient(to right, #447dbd, white);
     color: rgb(43, 42, 42);
     height: 35px;
     border-radius: 25px;
+    margin: auto;
 }
