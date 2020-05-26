@@ -1,7 +1,8 @@
 body{
-    padding: 0;
-    margin: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: auto;
+    font-family: 'Roboto Slab', serif;
     font-size: 18px;
     background-color: #78a4d6;
     line-height: 150%;
@@ -9,13 +10,23 @@ body{
     
 }
 
-header {
-    background-image: linear-gradient(to right, #447dbd, white);
-    color: rgb(43, 42, 42);
-    height: 75px;
-    border-radius: 25px;
+.display{
+    padding: 0 10% 0 10%;
 
 }
+
+.mainDiv{
+    background-color: grey;
+}
+
+.bioImg{
+    padding: 5px;
+}
+
+.mainText{
+    padding: 10px;
+}
+
 
 h1 {
     padding: 20px;
@@ -37,21 +48,12 @@ h4 {
     font-size: 14px;
 }
 
-/* #bio-img {
-    height: 300px;
-    width: 100px;
-} */
-
 a {
     color: darkblue;
 }
 
 a:visited {
     color: green;
-}
-
-.container {
-    margin: auto;
 }
 
 .row {
@@ -61,7 +63,8 @@ a:visited {
 footer {
     background-image: linear-gradient(to right, #447dbd, white);
     color: rgb(43, 42, 42);
-    height: 35px;
+    height: 65px;
     border-radius: 25px;
     margin: auto;
+    padding: 10px 10% 10px 10%;
 }
