@@ -18,6 +18,7 @@ body{
 
 .mainDiv{
     background-color: grey;
+    box-shadow: 5px 10px rgba(15, 15, 15, 0.466);
 }
 
 .bioImg{
