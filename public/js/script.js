@@ -28,11 +28,20 @@ $(document).ready(function(){
         console.log("clicked");
         let divEl = $("<div>").addClass("mainDiv");
         divEl.addClass("border border-white row");
-        let h2El = $("<h2>").text("For Feedback:")
+        let h2El = $("<h2>").text("For Feedback: Future Site for Feedback Form ")
+        var br = document.createElement("br");
 
+        var inputEl = $("<input>");
+        inputEl.addClass("description").attr("textarea");
+        var buttonEl = $("<button>");
+        buttonEl.attr("data-textarea")
+        buttonEl.addClass("btn btn-default far fa-save saveBtn");
+        
         $(".display").append(divEl);
         $(divEl).append(h2El);
-        $(h2El).append(ulEl);
+        $(divEl).append(br);
+        $(divEl).append(inputEl);
+        $(inputEl).append(buttonEl);
 
     }
 
