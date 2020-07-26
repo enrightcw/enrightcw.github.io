@@ -28,22 +28,11 @@ $(document).ready(function(){
         console.log("clicked");
         let divEl = $("<div>").addClass("mainDiv");
         divEl.addClass("border border-white row");
-        let h2El = $("<h2>").text("Reach out through:")
-        // let ulEl = $("<ul>").addClass("contactList");
-        // let liEl = $("<li").html("Test!");
-        // let git = $('<a>').attr('href', 'https://github.com/enrightcw').html('</br>GitHub');
-        // let linkedIn = $("<a>").attr('href', 'https://www.linkedin.com/in/chris-enright-364291b/').html('</br></br>LinkedIn');
-        // let email = $("<a>").attr("href", 'mailto:enrightcw@gmail.com').html('</br></br></br>Email');
+        let h2El = $("<h2>").text("For Feedback:")
 
         $(".display").append(divEl);
         $(divEl).append(h2El);
         $(h2El).append(ulEl);
-        // $(ulEl).append(liEl);
-        // $(ulEl).append(liEl);
-        // $(ulEl).append(liEl);
-        // // $(git).append(divEl);
-        // $(linkedIn).append(divEl);
-        // $(email).append(divEl);
 
     }
 
