@@ -30,20 +30,20 @@ $(document).ready(function(){
         divEl.addClass("border border-white row");
         let h2El = $("<h2>").text("Reach out through:")
         // let ulEl = $("<ul>").addClass("contactList");
-        // let liEl = $("<li>");
-        let git = $('<a>').attr('href', 'https://github.com/enrightcw').html('</br>GitHub');
-        let linkedIn = $("<a>").attr('href', 'https://www.linkedin.com/in/chris-enright-364291b/').html('</br></br>LinkedIn');
-        let email = $("<a>").attr("href", 'mailto:enrightcw@gmail.com').html('</br></br></br>Email');
-
+        // let liEl = $("<li").html("Test!");
+        // let git = $('<a>').attr('href', 'https://github.com/enrightcw').html('</br>GitHub');
+        // let linkedIn = $("<a>").attr('href', 'https://www.linkedin.com/in/chris-enright-364291b/').html('</br></br>LinkedIn');
+        // let email = $("<a>").attr("href", 'mailto:enrightcw@gmail.com').html('</br></br></br>Email');
 
         $(".display").append(divEl);
         $(divEl).append(h2El);
-        // $(divEl).append(git);
-        // $(divEl).append(linkedIn);
-        // $(divEl).append(email);
-        $(divEl).append(git).append(linkedIn).append(email);
-        $
-
+        $(h2El).append(ulEl);
+        // $(ulEl).append(liEl);
+        // $(ulEl).append(liEl);
+        // $(ulEl).append(liEl);
+        // // $(git).append(divEl);
+        // $(linkedIn).append(divEl);
+        // $(email).append(divEl);
 
     }
 
