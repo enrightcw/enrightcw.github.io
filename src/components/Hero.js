@@ -1,37 +1,26 @@
-import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import React from 'react';
+import Jumbotron from 'react-bootstrap/Jumbotron';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
-function NavTabs() {
-  // We'll go into the Hooks API later, for now, we are just using some code
-  // from the react-router docs (https://reacttraining.com/react-router/web/api/Hooks/uselocation)
-  // This allows the component to check the route any time the user uses a link to navigate.
-  const location = useLocation();
+function Hero(props) {
 
-  return (
-    <ul className="nav nav-tabs">
-      <li className="nav-item">
-        <Link to="/" className={location.pathname === "/" ? "nav-link active" : "nav-link"}>
-          Home
-        </Link>
-      </li>
-      <li className="nav-item">
-        <Link
-          to="/about"
-          className={location.pathname === "/about" ? "nav-link active" : "nav-link"}
-        >
-          About
-        </Link>
-      </li>
-      <li className="nav-item">
-        <Link
-          to="/contact"
-          className={location.pathname === "/contact" ? "nav-link active" : "nav-link"}
-        >
-          Contact
-        </Link>
-      </li>
-    </ul>
-  );
+    return(
+        <Jumbotron className="bg-transparent jumbotron-fluid p-0">
+            <Container fluid={true}>
+                <Row className="justify-content-center py-5">
+                    <Col md={8} sm={12}>
+                        { props.title && <h1 className="display-1 font-weight-bolder">{props.title}</h1> }
+                        { props.subTitle && <h3 className="display-4 font-weight-light">{props.subTitle}</h3> }
+                        { props.text && <h3 className="lead font-weight-light">{props.text}</h3> }
+                    </Col>
+                </Row>
+            </Container>
+        </Jumbotron>
+    );
+
 }
 
-export default NavTabs;
+
+export default Hero;

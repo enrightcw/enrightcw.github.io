@@ -1,27 +1,69 @@
-import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import NavTabs from "./components/NavTabs";
-import Home from "./components/pages/Home";
-import About from "./components/pages/About";
-import Contact from "./components/pages/Contact";
+import React from 'react';
+import {BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import Container from 'react-bootstrap/Container';
+import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
+import './App.css';
 
-function App() {
-  return (
-    <div className = 'main-container'>
+import Footer from './components/Footer';
+import HomePage from './pages/HomePage';
+import AboutPage from './pages/AboutPage';
+import ContactPage from './pages/ContactPage';
+
+
+class App extends React.Component {
+  
+  constructor(props) {
+    super(props);
+    this.state = {
+      title: 'Chris Enright',
+      headerLinks: [
+        { title: 'Home', path: '/' },
+        { title: 'About', path: '/about' },
+        { title: 'Contact', path: '/contact' }
+      ],
+      home: {
+        title: 'A New Path',
+        subTitle: 'Approaching the finish line!',
+        text: 'Checkout my projects below'
+      },
+      about: {
+        title: 'About Me'
+      },
+      contact: {
+        title: 'Let\'s Talk'
+      }
+    }
+  }
+
+  render() {
+    return (
       <Router>
-        <div>
-          <NavTabs />
-          <Route exact path="/" component={Home} />
-          <Route exact path="/about" component={About} />
-          <Route exact path="/contact" component={Contact} />
+        <Container className="p-0" fluid={true}>
+          
+          <Navbar className="border-bottom" bg="transparent" expand="lg">
+            <Navbar.Brand>Chris Enright</Navbar.Brand>
 
-        </div>
+            <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
+            <Navbar.Collapse id="navbar-toggle">
+              <Nav className="ml-auto">
+                <Link className="nav-link" to="/">Home</Link>
+                <Link className="nav-link" to="/about">About</Link>
+                <Link className="nav-link" to="/contact">Contact</Link>
+              </Nav>
+            </Navbar.Collapse>
+          </Navbar>
+
+          <Route path="/" exact render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text} />} />
+          <Route path="/about" render={() => <AboutPage title={this.state.about.title} />} />
+          <Route path="/contact" render={() => <ContactPage title={this.state.contact.title} />} />
+          
+          <Footer />
+
+        </Container>
       </Router>
-      <footer className='footer mt-auto py-3 bg-dark text-white'>
-          <div className='container'>Place sticky footer content here.</div>
-      </footer>
-    </div>
-  );
+    );
+  }
 }
 
 export default App;
