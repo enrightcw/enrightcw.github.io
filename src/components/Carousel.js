@@ -1,44 +1,83 @@
-import react from 'react';
-import { Carousel } from 'react-bootstrap';
+import React from 'react';
 
-function PortDisplay(){
-    return (
-        <Carousel>
-        <Carousel.Item>
-        <img
-            className="d-block w-100"
-            src="holder.js/800x400?text=First slide&bg=373940"
-            alt="First slide"
-        />
-        <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-            <img
-            className="d-block w-100"
-            src="holder.js/800x400?text=Second slide&bg=282c34"
-            alt="Third slide"
-            />
-        <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-            <img
-            className="d-block w-100"
-            src="holder.js/800x400?text=Third slide&bg=20232a"
-            alt="Third slide"
-            />
-        <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-        </Carousel.Caption>
-        </Carousel.Item>
-        </Carousel>
-    )
+import Card from '../components/Card';
+
+import devgrub from '../assets/images/devgrub.png';
+import youtube from '../assets/images/youtube.png';
+import evverest from '../assets/images/evverest.png';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+
+class Carousel extends React.Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            items: [
+                {
+                    id: 0,
+                    title: 'Dev Grub',
+                    subTitle: 'The cookbook for developers',
+                    imgSrc: devgrub,
+                    link: 'https://devgrub.com',
+                    selected: false
+                },
+                {
+                    id: 1,
+                    title: 'Garrett Love',
+                    subTitle: 'YouTube channel',
+                    imgSrc: youtube,
+                    link: 'https://www.youtube.com/channel/UCxSITxL2JbF229OGCqieVZw',
+                    selected: false
+                },
+                {
+                    id: 2,
+                    title: 'Evverest',
+                    subTitle: 'A social network for developers',
+                    imgSrc: evverest,
+                    link: 'https://github.com/garrettlove8/evverest',
+                    selected: false
+                },
+            ]
+        }
+    }
+
+
+    handleCardClick = (id, card) => {
+
+        let items = [...this.state.items];
+
+        items[id].selected = items[id].selected ? false : true;
+
+        items.forEach(item => {
+            if(item.id !== id) {
+                item.selected = false;
+            }
+        });
+
+        this.setState({
+            items
+        });
+    }
+
+
+    makeItems = (items) => {
+        return items.map(item => {
+            return <Card item={item} click={(e => this.handleCardClick(item.id, e))} key={item.id} />
+        })
+    }
+
+
+    render() {
+        return(
+            <Container fluid={true}>
+                <Row className="justify-content-around">
+                    {this.makeItems(this.state.items)}
+                </Row>
+            </Container>
+        );
+    }
+
 }
 
-export default PortDisplay;
+export default Carousel;
